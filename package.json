@@ -24,6 +24,16 @@
     "url": "https://github.com/bostrom/text-to-image/issues"
   },
   "homepage": "https://github.com/bostrom/text-to-image#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js, jsx}": [
+      "git add"
+    ]
+  },
   "dependencies": {
     "bluebird": "^3.4.1",
     "canvas": "^2.6.0",
