@@ -39,9 +39,13 @@
     "gulp": "^3.9.1",
     "gulp-spawn-mocha": "^3.0.0",
     "gulp-util": "^3.0.7",
+    "husky": "^3.0.9",
     "image-size": "^0.5.0",
     "istanbul": "^0.4.4",
+    "lint-staged": "^9.4.2",
     "mocha": "^3.0.0",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^2.0.1",
     "readimage": "^1.1.1",
     "sinon": "^1.17.4",
     "sinon-chai": "^2.8.0"
