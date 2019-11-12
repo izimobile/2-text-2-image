@@ -54,8 +54,10 @@ The `generate` function takes an optional second parameter containing configurat
 | debug        | false         | Set to true to turn on debug mode (see below).                                                                                         |
 | bgColor      | `"#FFFFFF"`   | Sets the background color of the image.                                                                                                |
 | textColor    | `"#000000"`   | Sets the text color.                                                                                                                   |
-| fontWeight   | `normal`      | The font weigh to use for the text in the image.                                                                                       |
-| customHeight | 0             | Sets the height of the generated image in pixels. If not provided, will automatically calculate the height based on the amount of text |
+| fontWeight*   | `normal`      | The font weigh to use for the text in the image.                                                                                       |
+| customHeight* | 0             | Sets the height of the generated image in pixels. If not provided, will automatically calculate the height based on the amount of text |
+
+> *\* new feature*
 
 Example:
 
