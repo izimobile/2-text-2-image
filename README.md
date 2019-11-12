@@ -1,6 +1,5 @@
 # Text to image
 
-[![Join the chat at https://gitter.im/bostrom/text-to-image](https://badges.gitter.im/bostrom/text-to-image.svg)](https://gitter.im/bostrom/text-to-image?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Dependency Status](https://img.shields.io/david/bostrom/text-to-image.svg)](https://david-dm.org/bostrom/text-to-image)
 [![devDependency Status](https://img.shields.io/david/dev/bostrom/text-to-image.svg)](https://david-dm.org/bostrom/text-to-image#info=devDependencies)
 [![Build Status](https://img.shields.io/travis/bostrom/text-to-image.svg)](https://travis-ci.org/bostrom/text-to-image)
@@ -8,9 +7,11 @@
 [![Npm Version](https://img.shields.io/npm/v/text-to-image.svg)](https://www.npmjs.com/package/text-to-image)
 [![License](https://img.shields.io/badge/license-ISC-blue.svg)](https://opensource.org/licenses/ICS)
 
+**\*This is a forked version of the original `text-to-image` repo, extended to be used for our MMS image feature**
+
 A library for generating an image data URI representing an image containing the text of your choice.
 
-Originally part of a Twitter bot for publishing tweets longer than 140 characters, the generator takes a string and an optional configuration object as parameters and returns a [promise](http://bluebirdjs.com/docs/why-promises.html) that will resolve to a image data URI (```data:image/png;base64,iVBORw0KGgoAAAA...```)
+Originally part of a Twitter bot for publishing tweets longer than 140 characters, the generator takes a string and an optional configuration object as parameters and returns a [promise](http://bluebirdjs.com/docs/why-promises.html) that will resolve to a image data URI (`data:image/png;base64,iVBORw0KGgoAAAA...`)
 
 ## Installation
 
@@ -37,18 +38,20 @@ Line breaks can be forced with `\n`.
 
 ## Configuring
 
-The ```generate``` function takes an optional second parameter containing configuration options for the image. All configuraion parameters are optional. The available options are as follows.
+The `generate` function takes an optional second parameter containing configuration options for the image. All configuraion parameters are optional. The available options are as follows.
 
-|    Name    | Default value |                             Description                              |
-| ---------- | ------------- | -------------------------------------------------------------------- |
-| maxWidth   | 400           | Sets the width of the generated image in pixels.                     |
-| fontSize   | 18            | The font size to use for the text in the image.                      |
-| fontFamily | Helvetica     | The font family to use for the text in the image.                    |
-| lineHeight | 28            | The line height for the generated text.                              |
-| margin     | 10            | The margin (all sides) between the text and the border of the image. |
-| debug      | false         | Set to true to turn on debug mode (see below).                       |
-| bgColor    | `"#FFFFFF"`   | Sets the background color of the image.                              |
-| textColor  | `"#000000"`   | Sets the text color.                                                 |
+| Name         | Default value | Description                                                                                                                            |
+| ------------ | ------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| maxWidth     | 400           | Sets the width of the generated image in pixels.                                                                                       |
+| fontSize     | 18            | The font size to use for the text in the image.                                                                                        |
+| fontFamily   | Helvetica     | The font family to use for the text in the image.                                                                                      |
+| lineHeight   | 28            | The line height for the generated text.                                                                                                |
+| margin       | 10            | The margin (all sides) between the text and the border of the image.                                                                   |
+| debug        | false         | Set to true to turn on debug mode (see below).                                                                                         |
+| bgColor      | `"#FFFFFF"`   | Sets the background color of the image.                                                                                                |
+| textColor    | `"#000000"`   | Sets the text color.                                                                                                                   |
+| fontWeight   | `normal`      | The font weigh to use for the text in the image.                                                                                       |
+| customHeight | 0             | Sets the height of the generated image in pixels. If not provided, will automatically calculate the height based on the amount of text |
 
 Example:
 
@@ -80,7 +83,7 @@ During development you may want to use the continuous testing task
 
     gulp watch
 
-A coverage report will be generated in ```coverage/lcov-report/index.html```.
+A coverage report will be generated in `coverage/lcov-report/index.html`.
 
 ## Contributing
 
