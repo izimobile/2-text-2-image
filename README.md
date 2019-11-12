@@ -7,7 +7,11 @@
 [![Npm Version](https://img.shields.io/npm/v/text-to-image.svg)](https://www.npmjs.com/package/text-to-image)
 [![License](https://img.shields.io/badge/license-ISC-blue.svg)](https://opensource.org/licenses/ICS)
 
-**\*This is a forked version of the original `text-to-image` repo, extended to be used for our MMS image feature**
+---
+
+**[\*This is a forked version of the original `text-to-image` repo, extended to be used for our MMS image feature]**
+
+---
 
 A library for generating an image data URI representing an image containing the text of your choice.
 
