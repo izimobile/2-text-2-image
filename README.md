@@ -9,7 +9,7 @@
 
 ---
 
-**[\*This is a forked version of the original `text-to-image` repo, extended to be used for our MMS image feature]**
+**[\*This is a forked version of the original [`text-to-image`](https://github.com/bostrom/text-to-image) repo, extended to be used for our MMS image feature]**
 
 ---
 
