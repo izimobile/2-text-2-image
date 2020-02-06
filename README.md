@@ -1,4 +1,4 @@
-# Text to image
+# 2Text 2Image
 
 [![Dependency Status](https://img.shields.io/david/bostrom/text-to-image.svg)](https://david-dm.org/bostrom/text-to-image)
 [![devDependency Status](https://img.shields.io/david/dev/bostrom/text-to-image.svg)](https://david-dm.org/bostrom/text-to-image#info=devDependencies)
@@ -8,6 +8,8 @@
 [![License](https://img.shields.io/badge/license-ISC-blue.svg)](https://opensource.org/licenses/ICS)
 
 ---
+
+![alt text](https://i0.wp.com/projectedfigures.com/wp-content/uploads/2016/12/2-fast-2-furious-paul-walker-tyrese-gibson.jpg?fit=551%2C247&ssl=1 "2Text 2Image")
 
 **[\*This is a forked version of the original [`text-to-image`](https://github.com/bostrom/text-to-image) repo, extended to be used for our MMS image feature]**
 
