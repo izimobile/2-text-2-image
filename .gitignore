@@ -38,3 +38,6 @@ jspm_packages
 
 # IntelliJ
 .idea
+
+# Any jpegs generated at root from testing
+test*.jpeg
