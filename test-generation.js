@@ -8,7 +8,8 @@ const testAlign = async (fileName = "test-align.jpeg", textAlign = "left") => {
       debug: true,
       textAlign,
       fileName,
-      leftMargin: 0
+      leftMargin: 0,
+      rightMargin: 50
     });
   } catch (e) {
     console.log("error", e);
