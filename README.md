@@ -53,11 +53,14 @@ The `generate` function takes an optional second parameter containing configurat
 | fontFamily   | Helvetica     | The font family to use for the text in the image.                                                                                      |
 | lineHeight   | 28            | The line height for the generated text.                                                                                                |
 | margin       | 10            | The margin (all sides) between the text and the border of the image.                                                                   |
+| leftMargin       | 120            | The left margin between the text and the border of the image. (Applies only when `textAlign` is `left`                                                                   |
+| rightMargin*       | 0            | The right margin between the text and the border of the image. (Applies only when `textAlign` is `right`                                                                  |
 | debug        | false         | Set to true to turn on debug mode (see below).                                                                                         |
 | bgColor      | `"#FFFFFF"`   | Sets the background color of the image.                                                                                                |
 | textColor    | `"#000000"`   | Sets the text color.                                                                                                                   |
 | fontWeight*   | `normal`      | The font weigh to use for the text in the image.                                                                                       |
 | customHeight* | 0             | Sets the height of the generated image in pixels. If not provided, will automatically calculate the height based on the amount of text |
+| textAlign*       | left            | The margin (all sides) between the text and the border of the image.                                                                   |
 
 > *\* new feature*
 
@@ -92,6 +95,13 @@ During development you may want to use the continuous testing task
     gulp watch
 
 A coverage report will be generated in `coverage/lcov-report/index.html`.
+
+---
+
+You can also test image generation by running the `test-generation.js` script.
+```
+node test-generation.js
+```
 
 ## Contributing
 
