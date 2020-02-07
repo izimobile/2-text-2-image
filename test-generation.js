@@ -10,8 +10,8 @@ const testAlign = async (fileName = "test-align.jpeg", textAlign = "left") => {
       fileName,
       leftMargin: 0,
       rightMargin: 50,
-      fontFamily: "BeyondInfinity",
-      fontSize: 48
+      fontFamily: "AvenirBook",
+      fontSize: 28
     });
   } catch (e) {
     console.log("error", e);
